@@ -1,8 +1,23 @@
+import React from "react";
 
-export default function App() {
+const BemVindo = (props) => {
+    return(
+      <div>
+        <h2>Bem-vindo(a) {props.nome}</h2>
+        <h3>Tenho {props.idade} anos </h3>
+      </div>
+    );
+}
+
+
+function App() {
   return(
     <div>
-      <h1>Bem vindo ao sistema</h1>
+      Olá mundo!
+      <BemVindo nome="Rodrigo" idade="21"/>
+      <BemVindo nome="Wanderlúcio" idade="39"/>
     </div>
   )
 }
+
+export default App;
